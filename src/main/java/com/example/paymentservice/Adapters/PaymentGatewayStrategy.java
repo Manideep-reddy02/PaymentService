@@ -12,6 +12,6 @@ public class PaymentGatewayStrategy {
        this.stripePaymentGatewayAdapter =stripePaymentGatewayAdapter;
    }
     public PaymentGatewayAdapter getPaymentGateway(){
-        return new StripePaymentGatewayAdapter();
+        return stripePaymentGatewayAdapter;
     }
 }
